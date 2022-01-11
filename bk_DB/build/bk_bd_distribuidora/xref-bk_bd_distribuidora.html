@@ -163,6 +163,7 @@ imports:
  &#8226;   <a href="#reprlib">reprlib</a>
  &#8226;   <a href="#selenium">selenium</a>
  &#8226;   <a href="#selenium.webdriver">selenium.webdriver</a>
+ &#8226;   <a href="#selenium.webdriver.chrome.options">selenium.webdriver.chrome.options</a>
  &#8226;   <a href="#selenium.webdriver.common.keys">selenium.webdriver.common.keys</a>
  &#8226;   <a href="#sre_compile">sre_compile</a>
  &#8226;   <a href="#sre_constants">sre_constants</a>
@@ -207,7 +208,6 @@ imports:
  &#8226;   <a href="#multiprocessing.popen_spawn_win32">multiprocessing.popen_spawn_win32</a>
  &#8226;   <a href="#multiprocessing.spawn">multiprocessing.spawn</a>
  &#8226;   <a href="#os">os</a>
- &#8226;   <a href="#re">re</a>
  &#8226;   <a href="#subprocess">subprocess</a>
  &#8226;   <a href="#sys">sys</a>
 
@@ -252,6 +252,17 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="'backports.ssl_match_hostname'"></a>
+  <a target="code" href="" type="text/plain"><tt>'backports.ssl_match_hostname'</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#urllib3.packages.ssl_match_hostname">urllib3.packages.ssl_match_hostname</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="'java.lang'"></a>
   <a target="code" href="" type="text/plain"><tt>'java.lang'</tt></a>
 <span class="moduletype">MissingModule</span>  <div class="import">
@@ -268,7 +279,7 @@ imported by:
   <a target="code" href="" type="text/plain"><tt>'org.python'</tt></a>
 <span class="moduletype">MissingModule</span>  <div class="import">
 imported by:
-    <a href="#pickle">pickle</a>
+    <a href="#copy">copy</a>
  &#8226;   <a href="#xml.sax">xml.sax</a>
 
   </div>
@@ -2304,17 +2315,6 @@ imported by:
 </div>
 
 <div class="node">
-  <a name="backports"></a>
-  <a target="code" href="" type="text/plain"><tt>backports</tt></a>
-<span class="moduletype">MissingModule</span>  <div class="import">
-imported by:
-    <a href="#urllib3.packages.ssl_match_hostname">urllib3.packages.ssl_match_hostname</a>
-
-  </div>
-
-</div>
-
-<div class="node">
   <a name="base64"></a>
   <a target="code" href="///C:/users/balford/appdata/local/programs/python/python39/lib/base64.py" type="text/plain"><tt>base64</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
@@ -2403,7 +2403,9 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#multiprocessing.heap">multiprocessing.heap</a>
+    <a href="#idna.core">idna.core</a>
+ &#8226;   <a href="#idna.intranges">idna.intranges</a>
+ &#8226;   <a href="#multiprocessing.heap">multiprocessing.heap</a>
  &#8226;   <a href="#random">random</a>
  &#8226;   <a href="#statistics">statistics</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
@@ -3043,8 +3045,8 @@ imported by:
   <a target="code" href="///C:/users/balford/appdata/local/programs/python/python39/lib/copy.py" type="text/plain"><tt>copy</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
-    <a href="#copyreg">copyreg</a>
- &#8226;   <a href="#org">org</a>
+    <a href="#'org.python'">'org.python'</a>
+ &#8226;   <a href="#copyreg">copyreg</a>
  &#8226;   <a href="#types">types</a>
  &#8226;   <a href="#weakref">weakref</a>
 
@@ -7235,10 +7237,117 @@ imported by:
 
 <div class="node">
   <a name="idna"></a>
-  <a target="code" href="" type="text/plain"><tt>idna</tt></a>
-<span class="moduletype">MissingModule</span>  <div class="import">
+  <a target="code" href="///C:/users/balford/appdata/local/programs/python/python39/lib/site-packages/idna/__init__.py" type="text/plain"><tt>idna</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#idna">idna</a>
+ &#8226;   <a href="#idna.core">idna.core</a>
+ &#8226;   <a href="#idna.idnadata">idna.idnadata</a>
+ &#8226;   <a href="#idna.intranges">idna.intranges</a>
+ &#8226;   <a href="#idna.package_data">idna.package_data</a>
+
+  </div>
+  <div class="import">
 imported by:
-    <a href="#urllib3.util.url">urllib3.util.url</a>
+    <a href="#idna">idna</a>
+ &#8226;   <a href="#idna.core">idna.core</a>
+ &#8226;   <a href="#idna.idnadata">idna.idnadata</a>
+ &#8226;   <a href="#idna.intranges">idna.intranges</a>
+ &#8226;   <a href="#idna.package_data">idna.package_data</a>
+ &#8226;   <a href="#idna.uts46data">idna.uts46data</a>
+ &#8226;   <a href="#urllib3.util.url">urllib3.util.url</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="idna.core"></a>
+  <a target="code" href="///C:/users/balford/appdata/local/programs/python/python39/lib/site-packages/idna/core.py" type="text/plain"><tt>idna.core</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#bisect">bisect</a>
+ &#8226;   <a href="#idna">idna</a>
+ &#8226;   <a href="#idna.idnadata">idna.idnadata</a>
+ &#8226;   <a href="#idna.intranges">idna.intranges</a>
+ &#8226;   <a href="#idna.uts46data">idna.uts46data</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#typing">typing</a>
+ &#8226;   <a href="#unicodedata">unicodedata</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#idna">idna</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="idna.idnadata"></a>
+  <a target="code" href="///C:/users/balford/appdata/local/programs/python/python39/lib/site-packages/idna/idnadata.py" type="text/plain"><tt>idna.idnadata</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#idna">idna</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#idna">idna</a>
+ &#8226;   <a href="#idna.core">idna.core</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="idna.intranges"></a>
+  <a target="code" href="///C:/users/balford/appdata/local/programs/python/python39/lib/site-packages/idna/intranges.py" type="text/plain"><tt>idna.intranges</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#bisect">bisect</a>
+ &#8226;   <a href="#idna">idna</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#idna">idna</a>
+ &#8226;   <a href="#idna.core">idna.core</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="idna.package_data"></a>
+  <a target="code" href="///C:/users/balford/appdata/local/programs/python/python39/lib/site-packages/idna/package_data.py" type="text/plain"><tt>idna.package_data</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#idna">idna</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#idna">idna</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="idna.uts46data"></a>
+  <a target="code" href="///C:/users/balford/appdata/local/programs/python/python39/lib/site-packages/idna/uts46data.py" type="text/plain"><tt>idna.uts46data</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#idna">idna</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#idna.core">idna.core</a>
 
   </div>
 
@@ -8931,7 +9040,7 @@ imported by:
   <a target="code" href="" type="text/plain"><tt>org</tt></a>
 <span class="moduletype">MissingModule</span>  <div class="import">
 imported by:
-    <a href="#copy">copy</a>
+    <a href="#pickle">pickle</a>
 
   </div>
 
@@ -9168,8 +9277,7 @@ imported by:
   <a target="code" href="///C:/users/balford/appdata/local/programs/python/python39/lib/pickle.py" type="text/plain"><tt>pickle</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
-    <a href="#'org.python'">'org.python'</a>
- &#8226;   <a href="#_compat_pickle">_compat_pickle</a>
+    <a href="#_compat_pickle">_compat_pickle</a>
  &#8226;   <a href="#_pickle">_pickle</a>
  &#8226;   <a href="#codecs">codecs</a>
  &#8226;   <a href="#copyreg">copyreg</a>
@@ -9177,6 +9285,7 @@ imports:
  &#8226;   <a href="#functools">functools</a>
  &#8226;   <a href="#io">io</a>
  &#8226;   <a href="#itertools">itertools</a>
+ &#8226;   <a href="#org">org</a>
  &#8226;   <a href="#pprint">pprint</a>
  &#8226;   <a href="#re">re</a>
  &#8226;   <a href="#struct">struct</a>
@@ -9655,6 +9764,7 @@ imported by:
  &#8226;   <a href="#html">html</a>
  &#8226;   <a href="#http.client">http.client</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
+ &#8226;   <a href="#idna.core">idna.core</a>
  &#8226;   <a href="#importlib.metadata">importlib.metadata</a>
  &#8226;   <a href="#inspect">inspect</a>
  &#8226;   <a href="#ipaddress">ipaddress</a>
@@ -9674,7 +9784,6 @@ imported by:
  &#8226;   <a href="#posixpath">posixpath</a>
  &#8226;   <a href="#pprint">pprint</a>
  &#8226;   <a href="#pydoc">pydoc</a>
- &#8226;   <a href="#pyi_rth_multiprocessing.py">pyi_rth_multiprocessing.py</a>
  &#8226;   <a href="#selenium.webdriver.firefox.firefox_profile">selenium.webdriver.firefox.firefox_profile</a>
  &#8226;   <a href="#shlex">shlex</a>
  &#8226;   <a href="#string">string</a>
@@ -10060,7 +10169,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#selenium.webdriver">selenium.webdriver</a>
+    <a href="#bk_bd_distribuidora.py">bk_bd_distribuidora.py</a>
+ &#8226;   <a href="#selenium.webdriver">selenium.webdriver</a>
  &#8226;   <a href="#selenium.webdriver.chrome.webdriver">selenium.webdriver.chrome.webdriver</a>
  &#8226;   <a href="#selenium.webdriver.opera.options">selenium.webdriver.opera.options</a>
 
@@ -12582,6 +12692,9 @@ imports:
 imported by:
     <a href="#asyncio.staggered">asyncio.staggered</a>
  &#8226;   <a href="#functools">functools</a>
+ &#8226;   <a href="#idna.core">idna.core</a>
+ &#8226;   <a href="#idna.intranges">idna.intranges</a>
+ &#8226;   <a href="#idna.uts46data">idna.uts46data</a>
  &#8226;   <a href="#importlib.abc">importlib.abc</a>
 
   </div>
@@ -12593,6 +12706,7 @@ imported by:
   <tt>unicodedata</tt> <span class="moduletype"><tt>c:\users\balford\appdata\local\programs\python\python39\DLLs\unicodedata.pyd</tt></span>  <div class="import">
 imported by:
     <a href="#encodings.idna">encodings.idna</a>
+ &#8226;   <a href="#idna.core">idna.core</a>
  &#8226;   <a href="#sre_parse">sre_parse</a>
  &#8226;   <a href="#stringprep">stringprep</a>
  &#8226;   <a href="#test.support">test.support</a>
@@ -13399,7 +13513,7 @@ imported by:
   <a target="code" href="///C:/users/balford/appdata/local/programs/python/python39/lib/site-packages/urllib3/packages/ssl_match_hostname/__init__.py" type="text/plain"><tt>urllib3.packages.ssl_match_hostname</tt></a>
 <span class="moduletype">Package</span>  <div class="import">
 imports:
-    <a href="#backports">backports</a>
+    <a href="#'backports.ssl_match_hostname'">'backports.ssl_match_hostname'</a>
  &#8226;   <a href="#ssl">ssl</a>
  &#8226;   <a href="#sys">sys</a>
  &#8226;   <a href="#urllib3.packages">urllib3.packages</a>

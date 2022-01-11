@@ -1,14 +1,17 @@
 import unittest
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
 import time
 
 class bk_database(unittest.TestCase):
 
     def setUp(self):   #funciones
-        options = webdriver.ChromeOptions() #escogiendo el navegador
-        options.add_experimental_option("excludeSwitches", ["enable-logging"])
-        self.driver = webdriver.Chrome(options=options,executable_path=r"C:\driverChrome\chromedriver.exe")
+        chromeOptions = Options()
+        chromeOptions.add_experimental_option("prefs", {
+        "download.default_directory" : "C:\\Users\\Balford\\OneDrive\\Documents\\Distribuidora",
+        })
+        self.driver = webdriver.Chrome(executable_path=r"C:\driverChrome\chromedriver.exe", chrome_options=chromeOptions)
 
 
     def test_search(self):
@@ -23,8 +26,7 @@ class bk_database(unittest.TestCase):
         export = driver.find_element_by_xpath("//*[@id='topmenu']/li[5]/a")
         export.click()
         time.sleep(1)
-        download = driver.find_element_by_xpath("//*[@id='buttonGo']")
-        download.click()
+        download = driver.find_element_by_xpath("/html/body/div[4]/form/div[7]/input").click()
         time.sleep(3)
 
     def tearDown(self): #cerramos el driver

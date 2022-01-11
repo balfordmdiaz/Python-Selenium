@@ -5,7 +5,7 @@ block_cipher = None
 
 
 a = Analysis(['bk_bd_distribuidora.py'],
-             pathex=['C:\\Users\\Balford\\OneDrive\\Documents\\Python-Selenium\\bk_DB'],
+             pathex=[],
              binaries=[],
              datas=[],
              hiddenimports=[],
