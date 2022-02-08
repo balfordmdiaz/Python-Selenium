@@ -40,6 +40,9 @@
   ('pyi_rth_inspect',
    'C:\\Users\\Balford\\AppData\\Local\\Programs\\Python\\Python39\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
    'PYSOURCE'),
+  ('pyi_rth_certifi',
+   'C:\\Users\\Balford\\AppData\\Local\\Programs\\Python\\Python39\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\hooks\\rthooks\\pyi_rth_certifi.py',
+   'PYSOURCE'),
   ('pyi_rth_multiprocessing',
    'C:\\Users\\Balford\\AppData\\Local\\Programs\\Python\\Python39\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_multiprocessing.py',
    'PYSOURCE'),
@@ -49,7 +52,7 @@
  [],
  False,
  False,
- 1641861681,
+ 1644354750,
  [('run.exe',
    'c:\\users\\balford\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit\\run.exe',
    'EXECUTABLE')])
